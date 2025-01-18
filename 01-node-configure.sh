@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 KUBERNETES_VERSION=v1.27
 CRIO_VERSION=v1.28
 cat <<EOF | tee /etc/yum.repos.d/kubernetes.repo
@@ -56,7 +55,6 @@ cat <<EOF> /etc/hosts
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 192.168.10.10 node1.example.com node1
 192.168.10.20 node2.example.com node2
-192.168.10.30 node3.example.com node3
-192.168.10.100 storage.example.com storage
+100.100.100.200 storage.example.com storage
 EOF
 
